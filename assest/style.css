@@ -1,9 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Sono:wght@400;500;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sono:wght@400;500;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sono:wght@400;500;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sono:wght@400;500;800&display=swap');
 * {
   margin: 0;
   padding: 0;
-
 }
 
+body{
+  font-family: 'Sono', sans-serif;
+}
 :root {
   --black: #201F22;
   --border-color: #F0F2F5;
@@ -15,100 +21,41 @@
 
 .container{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   background-color: var(--background-color);
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
-.col1, .col2{
-  width: 40%;
-}
 
-.col1 img{
-  height: 106px;
-}
-.col1 h1{
-  display: inline-block;
-  font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
-  line-height: 30px;
-  margin-left: 20px;
-}
-
-
-
-.col2 .card{
-  background-color: var(--white);
-  padding: 20px;
-  border-radius: 5px;
-  text-align: center;
-  width: 70%;
-  margin: auto;
-  box-shadow: 2px 2px 12px gray
-}
-.input-group input{
-  width: 90%;
-  padding: 16px;
-  margin-bottom: 12px;
-  border-radius: 5px;
-  border:1px  solid var(--border-color);
-  color: var(--black);
+p{
+  font-size: 1rem;
+  /* text-indent: 500px; */
+  /* word-spacing: 50px; */
+  /* line-height: 150px; */
+  /* white-space: nowrap; */
+  /* text-shadow: 1px 1px 10px red; */
+  font-weight: 400;
 
 }
 
-.input-group input:focus {
-  outline: none;
-  border: 1px solid var(--primary);
-}
-.input-button button{
-  width: 100%;
-  padding: 16px;
-  border: none;
+span a{
   background-color: var(--primary);
-  font-size: large;
+  padding: 5px 15px;
+  border-radius: 50%;
+  font-size: 3rem;
   color: var(--white);
-  font-weight: bold;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-bottom: 20px;
+  text-decoration: none;
+ 
 }
-.input-button1 button{
-  width: 70%;
-  padding: 16px;
-  border: none;
-  background-color: var(--button-color);
-  font-size: large;
+span{
+  margin: 10px 0;
+}
+/* span i{
   color: var(--white);
-  font-weight: bold;
-  border-radius: 5px;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  cursor: pointer;
-}
+  font-size: 3rem;
+} */
 
-.hr{
-  color: var(--border-color);
-  margin-top: 20px;
-}
-
-.input-link{
-  color: var(--primary);
-  text-decoration: none;
-  transition: all 0.5s;
-}
-.input-link:hover{
-  text-decoration: underline;
-}
-a{
-  text-decoration: none;
-  transition: all 0.3s;
-  font-weight: bold;
-}
-a:hover{
-  text-decoration: underline;
-
-}
-.footer{
-  text-align: center;
-  margin-top: 15px;
+span a:hover{
+  color: var(--background-color);
 }
